@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,200;1,400;1,500;1,700&display=swap');
+        @font-face {
+            font-family: 'Fredericka';
+            src: url(fontes/FrederickatheGreat-Regular.ttf) format(truetype);
+            /*
+            Tipos de format
+            - opentype (otf)
+            - truetype(ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+            */
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+
+            16px geralmente equivale a 1em.
+            */
+            font-size: 1em;
+            font-weight: normal;
+            /*pesos: lighter, normal, bold, bolder ou de 100 a 900*/
+            font-style: italic;
+            text-decoration: none;
+        }
+
+        h1 {
+            font: italic bolder 3em sans-serif;
+
+            /*shorthand font
+            font-style -> font-weight -> font-size -> font family
+            */
+        }
+
+        h1#fonts_google {
+            font-family: 'Kaushan Script', serif;
+            font-style: normal;
+        }
+
+        p#fonts_google {
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
+        }
+
+        h1#baixada {
+            font-family: 'Fredericka', serif;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        p#baixada {
+            font-family: 'Fredericka', sans-serif;
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes internas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et molestiae vitae nesciunt, odit accusamus aspernatur quibusdam nobis repellendus suscipit, obcaecati asperiores sequi perspiciatis voluptatum porro totam facilis praesentium sunt quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aspernatur odio, deleniti natus libero blanditiis saepe ad officiis optio molestias, earum ea dolorem sapiente corrupti facilis? Ipsum sint deserunt animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dicta tempore doloribus fugiat in! Consectetur, illum reiciendis. Ipsum mollitia cumque nostrum sequi repellendus animi aliquam, consectetur nemo inventore provident quos?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat possimus sapiente ullam incidunt impedit, fuga iste, nostrum temporibus quis expedita rem. Fugit quis molestiae nisi maiores quasi dolore placeat. Voluptatibus.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, aspernatur? Expedita nisi mollitia aut impedit sequi omnis, illum tenetur saepe, voluptate ipsa sint pariatur veniam laudantium maiores at adipisci et.</p>
+    <h1 id="fonts_google">Trabalhando com fontes externas</h1>
+    <p id="fonts_google">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi pariatur recusandae dolores et illum placeat. Ea, corporis voluptatum. Non fugiat cupiditate molestias assumenda et ipsum est magnam sed sit quibusdam.</p>
+    <h1 id="baixada">Fontes externas baixadas</h1>
+    <p id="baixada">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde facere perspiciatis animi debitis iste et. Eius expedita consequuntur inventore ea temporibus sit? Placeat tempora nemo laboriosam illo ipsum totam ducimus!</p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegado.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midias/teste_audio.mp3" controls autoplay></audio> 
+    <!--para ter compatibilidade com todos os navegadores, é necessário ter os arquivos mp3, wav e ogg-->
+    <audio preload="metadata" controls loop>
+        <source src="midias/teste_audio.mp3" type="audio/mpeg">
+        <source src="midias/teste_audio.ogg" type="audio/ogg">
+        <source src="midias/teste_audio.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.</p>
+        <a href="midias/teste_audio.mp3">Clique aqui para baixar o arquivo MP3</a>
+    </audio>
+
+    <h1>Reproduzindo Vídeo</h1>
+    <p>Vamos aprender a inserir vídeos hospedados localmente</p>
+    <video src="midias/teste_video_full.mp4" width="400" controls></video>
+    <!--O ideal é fazer da forma abaixo para ter uma compatibilidade melhor-->
+    <video width="400" poster="#" controls>
+        <source src="midias/Teste_video.m4v" type="video/mp4">
+        <source src="midias/Teste_video.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+        <a href="midias/teste_video_full.mp4">Clique aqui para baixar o arquivo MP4</a>
+    </video>
+    <p>Vamos aprender a inserir vídeos hospedados externamente incorporando do YouTube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
