@@ -7,14 +7,27 @@
     <title>Alinhamento Vertical</title>
     <style>
         #container {
-            height: 500px;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative; /*todo container tem posição relativa*/
+            height: 96vh;
             padding: 10px;
             background-color: purple;
         }
 
         #conteudo {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;/*necessário para configurar as propriedades left e top*/
             height: 200px;
+            width: 400px;
             background-color: yellow;
+            margin: auto;
+
+            left: 50%; /*ponto de referência é o topo esquerdo*/
+            top: 50%;
+
+            transform: translate(-50%, -50%); /* empurra o meio do conteúdo para o meio do container*/
         }
     </style>
 </head>
