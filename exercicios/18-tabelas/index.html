@@ -19,6 +19,7 @@
         table#grande {
             width: 500px;
             border-collapse: collapse; /*unir as bordas dos dados*/
+            position: relative;
         }
 
         td, th {
@@ -38,6 +39,12 @@
             padding: 10px;
             background-color: lightgray;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        } /*fixa o cabeçalho*/
 
         thead, tfoot {
             background-color: gray;
