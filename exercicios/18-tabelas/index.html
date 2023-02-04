@@ -18,7 +18,6 @@
 
         table#grande {
             width: 500px;
-            height: ;
             border-collapse: collapse; /*unir as bordas dos dados*/
         }
 
@@ -31,6 +30,13 @@
 
         td.num {
             text-align: right;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         thead, tfoot {
@@ -74,6 +80,7 @@
     <!--
         HIERARQUIA DE TABELAS GRANDES
         TABLE
+            CAPTION = LEGENDA
             THEAD
                 TR, TD, TH
             TBODY
@@ -82,10 +89,11 @@
                 TR, TD, TH
     -->
     <table id="grande">
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th> <!--scope col diz que os dados estão na coluna-->
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -200,7 +208,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th> <!--scope row diz que o dado está na linha-->
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
