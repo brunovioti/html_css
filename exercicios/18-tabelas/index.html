@@ -22,6 +22,12 @@
             position: relative;
         }
 
+        table#mesclada {
+            width: 300px;
+            border-collapse: collapse; /*unir as bordas dos dados*/
+            margin-top: 10px;
+        }
+
         td, th {
             border: 1px solid black;
             padding: 10px;
@@ -225,6 +231,23 @@
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
+    </table>
+    <table id="mesclada">
+        <caption>Mesclagem de célula</caption>
+        <tr>
+            <td rowspan="3">A</td> <!--rowspan mescla a celula para ocupar várias linhas-->
+            <td colspan="2">B</td> <!--colspan mescla a celula para ocupar várias colunas-->
+        </tr>
+        <tr>
+            <td>E</td>
+            <td rowspan="3">F</td>
+        </tr>
+        <tr>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td colspan="2">K</td>
+        </tr>
     </table>
 </body>
 </html>
