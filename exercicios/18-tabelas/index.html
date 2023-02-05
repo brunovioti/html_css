@@ -62,6 +62,10 @@
         } /*pseudo classe para efeito zebrado
             2n ou even para colorir linha par
             2n-1 ou odd para impar*/
+
+        col.cnome {
+            background-color: aquamarine;
+        }
     </style>
 </head>
 <body>
@@ -304,6 +308,11 @@
         </tr>
     </table>
     <table class="mesclada">
+        <colgroup><!--personaliza coluna-->
+            <col class="cgrupo">
+            <col class="cnome">
+            <col class="cfilmes">
+        </colgroup>
         <caption>Filmes Favoritos</caption>
         <thead>
             <tr>
