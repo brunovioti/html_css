@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+    <style>
+        iframe#tela {
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            border: 2px solid black;
+            height: 300px;
+            width: 95vw;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
@@ -25,5 +35,9 @@
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit doloremque facilis ex eius, dignissimos voluptates commodi natus eveniet culpa, magnam totam. Illo, reprehenderit dignissimos! Vitae sapiente sint a deserunt error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ut dicta eaque quae alias quod doloribus suscipit vitae magnam deleniti voluptatem corrupti odio ex aliquid laboriosam aperiam incidunt amet reprehenderit.</p>
     <iframe src="teste.html" frameborder="0"></iframe>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur rerum doloremque natus accusamus vero. Perspiciatis similique debitis reiciendis fugit accusantium reprehenderit facilis, officiis ratione nam qui, voluptatum quidem eaque harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eum ad eligendi magnam enim dolor inventore illo mollitia. Sunt vero repellendus quibusdam? Dignissimos laborum amet reiciendis consequuntur, porro sunt fuga?</p>
+    <h1>Trabalhando com iframe para carregar link dentro do iframe</h1>
+    <a href="teste.html" target="tela">Teste 01</a>
+    <a href="teste02.html" target="tela">Teste 02</a> <!--target puxa o name da ancora-->
+    <iframe src="" id="tela" name="tela"></iframe>
 </body>
 </html>
